@@ -36,10 +36,10 @@ class subversion::svn {
   }
 
   file { '/var/www/svn':
-    ensure => 'directory',
-    owner  => 'apache',
-    group  => 'apache',
-    mode   => '0755',
+    ensure  => 'directory',
+    owner   => 'apache',
+    group   => 'apache',
+    mode    => '0755',
     require => Package['mod_dav_svn'],
   }
 }
